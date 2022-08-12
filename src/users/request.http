@@ -4,7 +4,16 @@ content-type: application/json
 
 {
     "email": "email@email.com",
-    "password": ""
+    "password": "pass"
+}
+
+### LOGIN a user 
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "email@email.com",
+    "password": "pass"
 }
 
 ###  FIND A USER WITH A GIVEN ID
