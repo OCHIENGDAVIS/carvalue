@@ -1,9 +1,16 @@
+### LOGGED IN User
+GET http://localhost:3000/auth/whoami
+
+### LOGOUT 
+POST http://localhost:3000/auth/signout
+
+
 ### CREATE A NEW USER
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "email@email.com",
+    "email": "email3@email.com",
     "password": "pass"
 }
 
@@ -12,7 +19,7 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-    "email": "email@email.com",
+    "email": "email2@email.com",
     "password": "pass"
 }
 
