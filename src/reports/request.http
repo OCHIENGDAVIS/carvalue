@@ -1,0 +1,26 @@
+#### CREATING a new request 
+POST http://localhost:3000/reports/
+content-type: application/json
+
+{
+    "make": "Honda",
+    "model": "corola",
+    "year": 1980,
+    "mileage": 1000,
+    "lng": 0,
+    "lat": 0,
+    "price": 5000
+}
+
+### Creaing a new report 
+PATCH http://localhost:3000/reports/9
+content-type: application/json
+
+{
+    "approved": false
+
+}
+
+### Get an estimate for a vehicle
+Get http://localhost:3000/reports?make=toyota&model=corola&lng=0&lat=0&mileage=2000&year=2000
+
